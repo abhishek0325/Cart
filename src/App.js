@@ -84,9 +84,9 @@ class App extends React.Component {
        <Navbar count={this.getCartCount()} /> 
        <Cart
             products = {products}     
-            onIncreaseQuantity = {props.onIncreaseQuantity} 
-            onDecreaseQuantity = {props.onDecreaseQuantity}
-            onDeleteProduct = {props.onDeleteProduct}
+            onIncreaseQuantity = {this.handleIncreaseQuantity} 
+            onDecreaseQuantity = {this.handleDecreaseQuantity}
+            onDeleteProduct = {this.handleDeleteProduct}
        />
       </div>
     );
